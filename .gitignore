@@ -1,0 +1,22 @@
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Source Control
+.git
+.svn
+.hg
+
+# OSX
+.VolumeIcon.icns
+.fseventsd
+.Spotlight-V100
+.Trashes
+.DS_Store
+._*
+Icon?
+
+# Python
+pip-log.txt
+*.py[oc]
+*.egg-info
+*.mako.py[oc]?
+
+tmp
