@@ -20,16 +20,16 @@ setup(
     version          = __version__,
     description      = 'A tool for selecting colorschemes, by Cynthia Brewer',
     long_description = readme,
-    url              = 'http://github/dsc/colorbrewer',
+    url              = 'http://github/dsc/colorbrewer-python',
     
     author           = 'David Schoonover',
     author_email     = 'dsc@less.ly',
     
     py_modules       = [ 'colorbrewer', ],
     
-    # install_requires = [
-    #     "bunch  >= 1.0",
-    # ],
+    install_requires = [
+        "bunch  >= 1.0",
+    ],
     
     keywords         = 'colorbrewer color maps tools',
     classifiers      = [

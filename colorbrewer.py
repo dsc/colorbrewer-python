@@ -352,3 +352,9 @@ Set3 = {
     12: ['rgb(141,211,199)', 'rgb(255,255,179)', 'rgb(190,186,218)', 'rgb(251,128,114)', 'rgb(128,177,211)', 'rgb(253,180,98)', 'rgb(179,222,105)', 'rgb(252,205,229)', 'rgb(217,217,217)', 'rgb(188,128,189)', 'rgb(204,235,197)', 'rgb(255,237,111)']
 }
 qualitative = { 'Pastel2':Pastel2, 'Pastel1':Pastel1, 'Dark2':Dark2, 'Accent':Accent, 'Paired':Paired, 'Set1':Set1, 'Set2':Set2, 'Set3':Set3 }
+
+
+from bunch import bunchify
+for k, v in globals.items():
+    if isinstance(v, dict): globals()[k] = bunchify(v)
+
