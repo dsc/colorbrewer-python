@@ -355,6 +355,6 @@ qualitative = { 'Pastel2':Pastel2, 'Pastel1':Pastel1, 'Dark2':Dark2, 'Accent':Ac
 
 
 from bunch import bunchify
-for k, v in globals.items():
+for k, v in globals().items():
     if isinstance(v, dict): globals()[k] = bunchify(v)
 
